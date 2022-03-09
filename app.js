@@ -77,6 +77,34 @@ let licenciada = saludoLicenciada.slice(-5);
 console.log(licenciada);
 
 // •	OBJETOS LITERALES
+//Crear un objeto literal
+let perroPG = {
+    nombre:'bobi',
+    edad: 12,
+    vacunado : true
+}
+
+console.log(perroPG);
+
+//Utilizando los métodos de los objetos
+let deportista = {
+	energia: 100,
+    experiencia: 10,
+    nombre: "Aimar",
+    entrenarHoras: function(cantidadHoras){
+        this.energia = this.energia - (cantidadHoras * 5);
+        this.experiencia = this.experiencia + (cantidadHoras * 2);
+    }
+};
+
+console.log("==Antes de comenzar entrenamiento==");
+console.log("Deportista energia: "+deportista.energia);
+console.log("Deportista experiencia: "+deportista.experiencia);
+console.log("==ENTRENANDO==");
+deportista.entrenarHoras(5);
+console.log("==FIN ENTRENAMIENTO==");
+console.log("Deportista energia: "+deportista.energia);
+console.log("Deportista experiencia: "+deportista.experiencia);
 
 
 // •	ARROW FUNCTIONS
