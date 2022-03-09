@@ -109,8 +109,42 @@ console.log("Deportista experiencia: "+deportista.experiencia);
 
 // •	ARROW FUNCTIONS
 
+const saludoArrow = () => "hola mundo";
+
+console.log(saludoArrow());
+
+const dobleDe = numero => numero * 2
+
+console.log(dobleDe(4));
+
+const suma = (a, b) => a + b;
+
+console.log(suma(2,2));
+
+const horaActual = () => {
+    let fecha = new Date();
+    return fecha.getHours() + ':' + fecha.getMinutes();
+}
+
+console.log(horaActual());
+
+//playGrounnd Convertir a arrow function
+
+let dameCinco = () => [1,2,3,4,5]; 
+
+let multiplicarPorDos = () => 123 * 2;
+
+let mostrarNombre= () => "Mi nombre es Hernán";
+
+//playGround Arrow function con parámetro
+
+let saludarSimple =  nombre => 'Hola, ' + nombre + '!';
+
+//playGround Ahora probemos con más de uno
+let saludarDos = (nombre, apellido) => 'Hola, ' + nombre + ' ' +  apellido + '!';
 
 // •	CONDICIONALES
+//if ternario
 
 
 // •	REPASO DEL CICLO FOR
