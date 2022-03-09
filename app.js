@@ -145,7 +145,65 @@ let saludarDos = (nombre, apellido) => 'Hola, ' + nombre + ' ' +  apellido + '!'
 
 // •	CONDICIONALES
 //if ternario
+console.log(4 > 10? "4 is bigger" : "10 is bigger");
 
+//Switch
+let edadSwitch = 10;
+switch (edadSwitch) {
+    case 10:
+        console.log('Puede ingresar')
+        break;
+
+    default:
+        console.log('No')
+        break;
+}
+
+//playGround Fin de semana
+let dia = 'jueves'
+function finDeSemana (dia) {
+    switch (dia) {
+        case 'lunes':
+            console.log('buena semana');
+            break;
+        case 'viernes':
+            console.log('buen finde');
+            break;
+        default:
+            console.log('buen dia');
+            break;
+    }	
+}
+
+//playGround Tengo clases
+function tengoClases(dia) {
+	switch (dia) {
+		//Escribe tu código aquí
+		case "lunes":
+			console.log("tenés clases")
+		case "miércoles":
+			console.log("tenés clases")
+		case "viernes":
+			console.log("tenés clases")
+			break;
+		default:
+			console.log("no tenés clases")
+	}
+}
+
+//playGround Practicando if ternario
+let bicicletaA = {
+    rodado: 18,
+    marca: "Mountain Bike"
+}
+let bicicletaB = {
+    rodado: 24,
+    marca: "Aurora"
+}
+
+let bicicletaConRodadoGrande = (bicicletaA.rodado > bicicletaB.rodado)? bicicletaA : bicicletaB;
+
+console.log("La bicicleta con  mayor rodado es la "+ bicicletaConRodadoGrande.marca );
 
 // •	REPASO DEL CICLO FOR
 
