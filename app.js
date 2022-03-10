@@ -207,6 +207,35 @@ console.log("La bicicleta con  mayor rodado es la "+ bicicletaConRodadoGrande.ma
 
 // •	REPASO DEL CICLO FOR
 
+for(let vuelta = 1; vuelta <= 5; vuelta ++) {
+    console.log('Estoy en la vuelta ' + vuelta);
+}
+
+//playGround Repetir como un loro
+
+const loro = texto => {
+    for(let i = 0; i < 5 ; i++){
+        console.log(texto);
+    }
+}
+
+loro('Hola grupo');
+
+//playGround Contar impares
+
+function noParesDeContarImparesHasta(numero){
+    let contador = 0;
+    for (let index = 0; index <= numero; index++) {
+        if(index%2 !== 0){
+            contador++;
+        }
+        
+    }
+
+    return contador;
+}
+
+console.log(noParesDeContarImparesHasta(10));
 
 // •	WHILE Y DO - WHILE
 
